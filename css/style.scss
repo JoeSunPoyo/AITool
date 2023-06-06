@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+
+@import "_toolbox";
+
+body {
+  background: #1e1e1e;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+header {
+  .contentBox {
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+    @include flex($jc:space-between);
+  }
+  h1 {
+    img {
+      width: 250px;
+    }
+  }
+  ul{
+    @include flex;
+    gap: 0 20px;
+    li{
+      a{
+
+      }
+    }
+  }
+}
+
+.contentBox {
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
+}
